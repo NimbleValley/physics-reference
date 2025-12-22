@@ -5,9 +5,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
-import Home from "./pages/home";
-import RefSheet from "./pages/ref-sheet";
+import RefSheet from "./pages/ref-sheet/ref-sheet";
 import Root from "./root";
+import TitleBlurb from "./pages/home/title-blurb";
+import Chapter2 from "./pages/chapter2/chapter2";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,14 @@ const router = createBrowserRouter([
       {
         path: "ref-sheet",
         element: <RefSheet/>,
+      },
+      {
+        path: "/",
+        element: <TitleBlurb/>,
+      },
+      {
+        path: "/chapter2",
+        element: <Chapter2/>,
       },
     ]
   },

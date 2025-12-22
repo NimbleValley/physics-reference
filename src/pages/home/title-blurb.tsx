@@ -1,4 +1,4 @@
-export default function Main() {
+export default function TitleBlurb() {
     return (
         <div className="flex flex-col items-center w-full h-full justify-center pt-30 pl-[15vw]">
             <h1 className="text-4xl text-[#023047] mb-8">Reference material for AP Physics C: Mechanics</h1>

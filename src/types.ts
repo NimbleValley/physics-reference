@@ -1,1 +1,1 @@
-export type PAGES = 'Home' | 'Ref Sheet' | 'Unit 1' | 'Unit 2' | 'Unit 3'
+export type PAGES = 'Home' | 'Ref Sheet' | 'Chapter 1' | 'Chapter 2' | 'Chapter 3'
