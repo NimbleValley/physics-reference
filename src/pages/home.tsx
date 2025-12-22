@@ -6,7 +6,6 @@ import Sidebar from "../shared/sidebar";
 export default function Home() {
   return <>
   <Header />
-  <Sidebar />
-  <Main/>
+  <Sidebar active="Home" />
   </>;
 }

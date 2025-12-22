@@ -7,15 +7,18 @@ import {
 import "./index.css";
 import Home from "./pages/home";
 import RefSheet from "./pages/ref-sheet";
+import Root from "./root";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
-  },
-  {
-    path: "/ref-sheet",
-    element: <RefSheet/>,
+    element: <Root/>,
+    children: [
+      {
+        path: "ref-sheet",
+        element: <RefSheet/>,
+      },
+    ]
   },
 ], {
   basename: "/physics-reference/"
