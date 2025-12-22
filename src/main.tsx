@@ -5,14 +5,21 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
-import App from "./App";
+import Home from "./pages/home";
+import RefSheet from "./pages/ref-sheet";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <Home/>,
   },
-]);
+  {
+    path: "/ref-sheet",
+    element: <RefSheet/>,
+  },
+], {
+  basename: "/physics-reference/"
+});
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
