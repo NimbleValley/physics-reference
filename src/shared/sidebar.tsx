@@ -27,7 +27,7 @@ export default function Sidebar({ active }: { active: PAGES }) {
                     units.map((value, i) => {
                         return <button key={i} className="relative">
                             <NavLink to={links[value] ?? '/'} className={({ isActive, isPending }) => `${isActive && 'bg-[#FB8500]/50 font-semibold'} block relative group text-lg hover:shadow-md shadow-[#FB8500]/20 hover:bg-[#FB8500] hover:scale-105 duration-300 hover:text-white transition cursor-pointer px-7 py-2 rounded-lg`}>{value}
-                                {descriptions[value] && <div className=" bottom-0 max-h-0 text-white opacity-0 group-hover:opacity-100 group-hover:max-h-screen transition-all ">
+                                {descriptions[value] && <div className=" bottom-0 max-h-0 text-white opacity-0 group-hover:opacity-100 group-hover:max-h-screen transition-all duration-300">
                                     <h2 className="font-light text-sm">{descriptions[value]}</h2>
                                 </div>}
                             </NavLink>
